@@ -1,0 +1,74 @@
+/* Basic sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    transition: width 0.3s;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.collapsible-content {
+    display: none;
+    padding-left: 10px;
+}
+
+.collapsible-content a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    padding: 8px 0;
+}
+
+.collapsible-content a:hover {
+    color: #f1f1f1;
+}
+
+/* Button styling */
+.toggle-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+.expanded {
+    width: 250px;
+}
+
+.expanded .collapsible-content {
+    display: block;
+}
+
+.expanded .toggle-btn {
+    transform: translateX(-50%) rotate(180deg);
+}
